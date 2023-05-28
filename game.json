@@ -139,11 +139,26 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "Text",
+          "persistentUuid": "c1732981-ed7a-44a2-a621-2cb21cea2548",
           "width": 0,
-          "x": 234,
-          "y": 596,
+          "x": 262,
+          "y": 591,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 106,
+          "layer": "",
+          "name": "ToMainMenu",
+          "persistentUuid": "6e8731f0-ef9d-4eba-875f-7e402a81bb8e",
+          "width": 119,
+          "x": 22,
+          "y": 19,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -153,12 +168,23 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "ToMainMenu",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -193,7 +219,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Main",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -214,9 +240,116 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "Leaderboard",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ToMainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -241,7 +374,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -274,12 +412,27 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "Text",
+          "persistentUuid": "97320948-ba1a-46ab-9888-add221ec3257",
           "width": 0,
-          "x": 234,
-          "y": 596,
-          "zOrder": 2,
+          "x": 321,
+          "y": 576,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 106,
+          "layer": "",
+          "name": "ToMainMenu",
+          "persistentUuid": "b9de7dfc-f846-477c-9832-a9c5c9236b0d",
+          "width": 115,
+          "x": 38,
+          "y": 34,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -287,13 +440,57 @@
       ],
       "objects": [
         {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "More",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "ToMainMenu",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -328,7 +525,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Main",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -351,7 +548,76 @@
           }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ToMainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -376,7 +642,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -398,7 +669,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2550455473354342,
+        "zoomFactor": 0.30104611971824613,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -409,11 +680,26 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "Text",
+          "persistentUuid": "a1701a9b-5d7c-4a51-8ea6-b9e04f03553e",
           "width": 0,
-          "x": 234,
-          "y": 596,
+          "x": 269,
+          "y": 600,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 106,
+          "layer": "",
+          "name": "ToMainMenu",
+          "persistentUuid": "1a3bc86f-dd2e-46b8-9594-d3c4e74d01c5",
+          "width": 119,
+          "x": 29,
+          "y": 28,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -423,12 +709,23 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "ToMainMenu",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -463,7 +760,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Main",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -484,9 +781,116 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "How To Play",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ToMainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -511,7 +915,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -544,11 +953,26 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "Text",
+          "persistentUuid": "8156d46e-59f9-447d-bbb6-d429c9293334",
           "width": 0,
-          "x": 234,
+          "x": 267,
           "y": 596,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 106,
+          "layer": "",
+          "name": "ToMainMenu",
+          "persistentUuid": "44e3e31a-48ee-4e7a-8ad1-ca5a3a33b58b",
+          "width": 119,
+          "x": 27,
+          "y": 24,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -558,12 +982,23 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "ToMainMenu",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -598,7 +1033,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Main",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -619,9 +1054,116 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "Reset Game",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ToMainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -646,7 +1188,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -730,13 +1277,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -805,13 +1352,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -1081,12 +1628,42 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "Restart",
+          "persistentUuid": "54d0465e-4172-4a46-9560-e911c551a385",
           "width": 0,
-          "x": 234,
-          "y": 596,
-          "zOrder": 2,
+          "x": 210,
+          "y": 469,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MainMenu",
+          "persistentUuid": "9c1c7072-a168-427a-9eb1-a38f04b12c29",
+          "width": 0,
+          "x": 214,
+          "y": 630,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Text",
+          "persistentUuid": "72329446-100b-41a3-becf-932e9f44a014",
+          "width": 0,
+          "x": 227,
+          "y": 273,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1095,12 +1672,23 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "Restart",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -1135,7 +1723,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Restart",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -1156,9 +1744,232 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "MainMenu",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Main Menu",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "Mission Failed",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Restart",
+                "=",
+                "(SceneWindowWidth()/2)-(Restart.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "MainMenu",
+                "=",
+                "(SceneWindowWidth()/2)-(MainMenu.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Restart",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LevelSelect\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -1183,7 +1994,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -1216,12 +2032,42 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "NextLevel",
+          "persistentUuid": "f9abadec-42c2-4424-be59-fd2007c1f423",
           "width": 0,
-          "x": 234,
-          "y": 596,
-          "zOrder": 2,
+          "x": 246,
+          "y": 426,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MainMenu",
+          "persistentUuid": "ae176d28-86aa-4f85-81fa-c6493f69f61d",
+          "width": 0,
+          "x": 254,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Text",
+          "persistentUuid": "dd0d4f49-90ca-4fa2-bb32-0375cd27368a",
+          "width": 0,
+          "x": 250,
+          "y": 254,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1230,12 +2076,23 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "NextLevel",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -1270,7 +2127,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Next Level",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -1291,9 +2148,232 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "MainMenu",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Main Menu",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "Mission Pass",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "NextLevel",
+                "=",
+                "(SceneWindowWidth()/2)-(NextLevel.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "MainMenu",
+                "=",
+                "(SceneWindowWidth()/2)-(MainMenu.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "NextLevel",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"LevelSelect\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -1318,7 +2398,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -1372,6 +2457,36 @@
           "x": 267,
           "y": 368,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Pass",
+          "persistentUuid": "b7206954-c0f1-4435-8a1f-399a683c4b65",
+          "width": 0,
+          "x": 51,
+          "y": 1124,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Fail",
+          "persistentUuid": "989f682e-d2c5-4690-a365-222ada745b82",
+          "width": 0,
+          "x": 412,
+          "y": 1124,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1443,6 +2558,156 @@
           }
         },
         {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "Pass",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 1,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Pass",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "Fail",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "rightEdgeAnchor": 2,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 2,
+              "relativeToOriginalWindowSize": true,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Fail",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
           "assetStoreId": "",
           "bold": true,
           "italic": false,
@@ -1455,13 +2720,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -1555,6 +2820,58 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Pass",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Pass\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Fail",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Fail\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1608,7 +2925,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2550455473354342,
+        "zoomFactor": 0.3216911764705891,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1619,12 +2936,87 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "SkipLoading",
-          "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
+          "name": "Play",
+          "persistentUuid": "d3d230e8-8269-4788-bb96-a52cde228500",
+          "width": 0,
+          "x": 241,
+          "y": 984,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Level1",
+          "persistentUuid": "f881fb6f-d22e-41b2-9d0c-f32156fc8b81",
+          "width": 0,
+          "x": 229,
+          "y": 312,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Level2",
+          "persistentUuid": "30223332-49e0-413f-af12-69e7d21a2fe1",
+          "width": 0,
+          "x": 232,
+          "y": 469,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Level3",
+          "persistentUuid": "76e5d269-af00-4e35-811d-e81bd4bc042e",
           "width": 0,
           "x": 234,
-          "y": 596,
-          "zOrder": 2,
+          "y": 624,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Text",
+          "persistentUuid": "449618a9-f914-446b-8190-9023cf99b9a8",
+          "width": 0,
+          "x": 263,
+          "y": 174,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 106,
+          "layer": "",
+          "name": "ToMainMenu",
+          "persistentUuid": "56606c85-94aa-4f4e-8fd4-dafc44fbe6ed",
+          "width": 110,
+          "x": 33,
+          "y": 34,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1633,12 +3025,23 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "SkipLoading",
+          "name": "Play",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "name": "Anchor",
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
@@ -1673,7 +3076,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Skip Loading",
+              "string": "Play",
               "font": "",
               "textAlignment": "center",
               "characterSize": 32,
@@ -1694,9 +3097,482 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "Level1",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 0,
+              "name": "Anchor",
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Level1",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "Level2",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 0,
+              "name": "Anchor",
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Level2",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "Level3",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Level3",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "ToMainMenu",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Main",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 32,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "Level Select",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Positions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Text",
+                "=",
+                "(SceneWindowWidth()/2)-(Text.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Play",
+                "=",
+                "(SceneWindowWidth()/2)-(Play.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Level1",
+                "=",
+                "(SceneWindowWidth()/2)-(Level1.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Level2",
+                "=",
+                "(SceneWindowWidth()/2)-(Level2.Width()/2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Level3",
+                "=",
+                "(SceneWindowWidth()/2)-(Level3.Width()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Click actions",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Play",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ToMainMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -1721,7 +3597,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -1850,13 +3731,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -1925,13 +3806,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2000,13 +3881,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2075,13 +3956,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2150,13 +4031,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2373,7 +4254,7 @@
               },
               "parameters": [
                 "",
-                "\"Game\"",
+                "\"LevelSelect\"",
                 ""
               ]
             }
