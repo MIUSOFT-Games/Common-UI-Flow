@@ -1,13 +1,15 @@
 {
   "firstLayout": "Loading",
   "gdVersion": {
-    "build": 99,
-    "major": 4,
-    "minor": 0,
+    "build": 216,
+    "major": 5,
+    "minor": 4,
     "revision": 0
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "portrait",
     "packageName": "com.example.gamename",
@@ -105,6 +107,9 @@
     "resourceFolders": []
   },
   "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "objectsGroups": [],
   "variables": [],
   "layouts": [
@@ -128,7 +133,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41943397827590684,
+        "zoomFactor": 0.2636457673770805,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -142,7 +147,7 @@
           "name": "SkipLoading",
           "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
           "width": 0,
-          "x": 234,
+          "x": 254,
           "y": 596,
           "zOrder": 2,
           "numberProperties": [],
@@ -169,7 +174,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "SkipLoading",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -216,6 +220,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Skip Loading",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -236,7 +261,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -261,9 +285,41 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Loading",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "SkipLoading"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -275,8 +331,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Btn Positions",
-          "comment2": ""
+          "comment": "Btn Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -316,8 +371,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -351,9 +405,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -438,7 +498,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "ToMainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -496,6 +555,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -516,7 +596,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -541,9 +620,41 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Leaderboard",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "ToMainMenu"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -555,8 +666,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -584,8 +694,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -624,9 +733,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -714,7 +829,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -739,12 +853,32 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "More",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         },
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "ToMainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -802,6 +936,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -817,6 +972,17 @@
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Text"
+          },
+          {
+            "objectName": "ToMainMenu"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -828,8 +994,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -857,8 +1022,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -892,9 +1056,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -979,7 +1149,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "ToMainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -1037,6 +1206,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -1057,7 +1247,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -1082,9 +1271,41 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "How To Play",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "ToMainMenu"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -1096,8 +1317,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1125,8 +1345,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1165,9 +1384,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -1252,7 +1477,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "ToMainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -1310,6 +1534,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -1330,7 +1575,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -1355,9 +1599,41 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Reset Game",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "ToMainMenu"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -1369,8 +1645,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1398,8 +1673,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1438,9 +1712,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -1540,7 +1820,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Continue",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -1598,6 +1877,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Continue",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -1615,7 +1915,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Restart",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -1673,6 +1972,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Restart",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -1693,7 +2013,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -1718,9 +2037,44 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Pause",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Continue"
+          },
+          {
+            "objectName": "Restart"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -1732,8 +2086,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1781,8 +2134,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1840,9 +2192,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -1942,7 +2300,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Restart",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2000,6 +2357,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Restart",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2017,7 +2395,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "MainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2075,6 +2452,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main Menu",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2095,7 +2493,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -2120,9 +2517,44 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Mission Failed",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Restart"
+          },
+          {
+            "objectName": "MainMenu"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -2134,8 +2566,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2183,8 +2614,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2244,9 +2674,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -2346,7 +2782,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "NextLevel",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2404,6 +2839,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Next Level",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2421,7 +2877,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "MainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2479,6 +2934,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main Menu",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2499,7 +2975,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -2524,9 +2999,44 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Mission Pass",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "NextLevel"
+          },
+          {
+            "objectName": "MainMenu"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -2538,8 +3048,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2587,8 +3096,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2648,9 +3156,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -2765,7 +3279,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Pause",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2812,6 +3325,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Pause",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2829,7 +3363,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Pass",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2887,6 +3420,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Pass",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2904,7 +3458,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Fail",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -2962,6 +3515,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Fail",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -2982,7 +3556,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -3007,9 +3580,47 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Gameplay",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Pause"
+          },
+          {
+            "objectName": "Pass"
+          },
+          {
+            "objectName": "Fail"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -3021,8 +3632,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3062,8 +3672,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3148,9 +3757,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -3295,7 +3910,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Play",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -3353,6 +3967,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Play",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -3370,7 +4005,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Level1",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -3428,6 +4062,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Level1",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -3445,7 +4100,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Level2",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -3503,6 +4157,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Level2",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -3520,7 +4195,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Level3",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -3578,6 +4252,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Level3",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -3595,7 +4290,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "ToMainMenu",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -3653,6 +4347,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Main",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -3673,7 +4388,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -3698,9 +4412,53 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Level Select",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Play"
+          },
+          {
+            "objectName": "Level1"
+          },
+          {
+            "objectName": "Level2"
+          },
+          {
+            "objectName": "Level3"
+          },
+          {
+            "objectName": "ToMainMenu"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -3712,8 +4470,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Positions",
-          "comment2": ""
+          "comment": "Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3781,8 +4538,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3847,9 +4603,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -3994,7 +4756,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Play",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -4052,6 +4813,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Play",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -4069,7 +4851,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "More",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -4127,6 +4908,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "More",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -4144,7 +4946,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "Leaderboard",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -4202,6 +5003,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Leaderboard",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -4219,7 +5041,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "HowToPlay",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -4277,6 +5098,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "How To Play",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -4294,7 +5136,6 @@
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "ResetGame",
-          "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -4352,6 +5193,27 @@
                 "b": 79,
                 "g": 72,
                 "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Reset Game",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 32,
+                "color": "72;72;79"
               }
             },
             "Pressed": {
@@ -4372,7 +5234,6 @@
           "italic": false,
           "name": "Text",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -4397,9 +5258,53 @@
             "b": 0,
             "g": 0,
             "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Main Menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "color": "0;0;0"
           }
         }
       ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Play"
+          },
+          {
+            "objectName": "More"
+          },
+          {
+            "objectName": "Leaderboard"
+          },
+          {
+            "objectName": "HowToPlay"
+          },
+          {
+            "objectName": "ResetGame"
+          },
+          {
+            "objectName": "Text"
+          }
+        ]
+      },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -4411,8 +5316,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Btn Positions",
-          "comment2": ""
+          "comment": "Btn Positions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4500,8 +5404,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Click actions",
-          "comment2": ""
+          "comment": "Click actions"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4639,9 +5542,15 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 8067128,
           "ambientLightColorR": 16,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -4696,6 +5605,8 @@
         "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -4730,8 +5641,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "The \"Validated\" state only last one frame.",
-                      "comment2": ""
+                      "comment": "The \"Validated\" state only last one frame."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -4781,8 +5691,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Make sure the cursor position is only checked once per frame.",
-                          "comment2": ""
+                          "comment": "Make sure the cursor position is only checked once per frame."
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -4846,8 +5755,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Touches are always pressed, so ShouldCheckHovering doesn't matter.",
-                          "comment2": ""
+                          "comment": "Touches are always pressed, so ShouldCheckHovering doesn't matter."
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -5880,9 +6788,16 @@
       ],
       "eventsBasedObjects": [
         {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
           "defaultName": "Button",
           "description": "A button that can be customized.",
           "fullName": "Button (panel sprite)",
+          "isUsingLegacyInstancesRenderer": true,
           "name": "PanelSpriteButton",
           "eventsFunctions": [
             {
@@ -5901,8 +6816,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Create one background instance for of each state.\nOnly the instance for the current state is shown.",
-                  "comment2": ""
+                  "comment": "Create one background instance for of each state.\nOnly the instance for the current state is shown."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -5982,8 +6896,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Place the label over the backgrounds.",
-                  "comment2": ""
+                  "comment": "Place the label over the backgrounds."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -6114,8 +7027,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Show the right background accordingly to the new state.",
-                      "comment2": ""
+                      "comment": "Show the right background accordingly to the new state."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -6480,8 +7392,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Children instances must be resized when the button size change:\n- backgrounds for each state are resized to take the full dimensions of the button\n- the label is put back at the center of the button\n\nThe scale is set back to 1 because it means that the parent instance has the same dimensions as the union of its children instances.",
-                      "comment2": ""
+                      "comment": "Children instances must be resized when the button size change:\n- backgrounds for each state are resized to take the full dimensions of the button\n- the label is put back at the center of the button\n\nThe scale is set back to 1 because it means that the parent instance has the same dimensions as the union of its children instances."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -7183,7 +8094,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "PressedLabelOffsetY"
             },
             {
@@ -7195,7 +8105,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "LeftPadding"
             },
             {
@@ -7207,7 +8116,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "RightPadding"
             },
             {
@@ -7219,7 +8127,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "TopPadding"
             },
             {
@@ -7231,7 +8138,6 @@
               "extraInformation": [
                 "Label"
               ],
-              "hidden": false,
               "name": "BottomPadding"
             },
             {
@@ -7241,7 +8147,6 @@
               "description": "",
               "group": "",
               "extraInformation": [],
-              "hidden": false,
               "name": "HoveredFadeOutDuration"
             }
           ],
@@ -7252,7 +8157,6 @@
               "italic": false,
               "name": "Label",
               "smoothed": true,
-              "tags": "",
               "type": "TextObject::Text",
               "underlined": false,
               "variables": [],
@@ -7266,6 +8170,27 @@
                 "b": 0,
                 "g": 0,
                 "r": 0
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Text",
+                "font": "",
+                "textAlignment": "",
+                "verticalTextAlignment": "top",
+                "characterSize": 20,
+                "color": "0;0;0"
               }
             },
             {
@@ -7275,7 +8200,6 @@
               "leftMargin": 0,
               "name": "Idle",
               "rightMargin": 0,
-              "tags": "",
               "texture": "",
               "tiled": false,
               "topMargin": 0,
@@ -7305,7 +8229,6 @@
               "leftMargin": 0,
               "name": "Hovered",
               "rightMargin": 0,
-              "tags": "",
               "texture": "",
               "tiled": false,
               "topMargin": 0,
@@ -7327,7 +8250,6 @@
               "leftMargin": 0,
               "name": "Pressed",
               "rightMargin": 0,
-              "tags": "",
               "texture": "",
               "tiled": false,
               "topMargin": 0,
@@ -7337,7 +8259,56 @@
               "effects": [],
               "behaviors": []
             }
-          ]
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": []
         }
       ]
     }
