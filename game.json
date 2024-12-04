@@ -1,7 +1,7 @@
 {
   "firstLayout": "Loading",
   "gdVersion": {
-    "build": 216,
+    "build": 218,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -133,7 +133,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2636457673770805,
+        "zoomFactor": 0.3010461197182464,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -141,13 +141,14 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 101,
           "layer": "",
           "name": "SkipLoading",
           "persistentUuid": "aa25f948-aac0-4742-b355-a9d8cf4c88db",
-          "width": 0,
-          "x": 254,
+          "width": 300,
+          "x": 219,
           "y": 596,
           "zOrder": 2,
           "numberProperties": [],
@@ -457,7 +458,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2550455473354342,
+        "zoomFactor": 0.28172599320795616,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1764,7 +1765,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.47893418845352526,
+        "zoomFactor": 0.3437520241612321,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1808,7 +1809,7 @@
           "name": "Restart",
           "persistentUuid": "22ea2acd-2809-4871-96a4-7018885a391a",
           "width": 0,
-          "x": 214,
+          "x": 224,
           "y": 583,
           "zOrder": 4,
           "numberProperties": [],
@@ -2244,7 +2245,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2550455473354342,
+        "zoomFactor": 0.30104611971824613,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3208,7 +3209,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.34375202416123185,
+        "zoomFactor": 0.33253870912507794,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3809,7 +3810,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3216911764705891,
+        "zoomFactor": 0.3437520241612319,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4655,7 +4656,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2817259932079567,
+        "zoomFactor": 0.3010461197182467,
         "windowMask": false
       },
       "objectsGroups": [],
